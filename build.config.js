@@ -15,7 +15,6 @@ let ctx = await esbuild.context({
   },
   sourcemap: true,
   minify: true,
-  // target: ["chrome58", "firefox57", "safari11", "edge16"], To be reconsidered
 });
 
 await ctx.serve({
