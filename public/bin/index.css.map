@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/index.css"],
-  "sourcesContent": ["button {\n  background: transparent;\n  border: solid 1px cyan;\n  color: cyan;\n  height: 50px;\n  padding: 0 16px;\n  font-size: 20px;\n}\n\n.App {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n  background: #020a20;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n"],
-  "mappings": "AAAA,OACE,WAAY,YACZ,OAAQ,MAAM,IAAI,KAClB,MAAO,KACP,OAAQ,KAJV,QAKW,EAAE,KACX,UAAW,IACb,CAEA,CAAC,IACC,QAAS,KACT,YAAa,OACb,gBAAiB,OACjB,MAAO,KACP,OAAQ,MACR,WAAY,OACd,CAEA,EAlBA,QAmBW,EAnBX,OAoBU,EACR,WAAY,UACd",
-  "names": []
-}
