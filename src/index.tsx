@@ -8,7 +8,7 @@ import "./index.css";
 export default function App() {
   return (
     <div className="App">
-      <Button text="This is a button component" />
+      <Button text="This is a button" />
     </div>
   );
 }

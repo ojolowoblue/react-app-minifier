@@ -1,26 +1,24 @@
-import * as esbuild from "esbuild";
+import esbuildServer from "esbuild-live-server";
 
-let ctx = await esbuild.context({
-  logLevel: "info",
-  allowOverwrite: true,
-  entryPoints: ["./src/index.tsx"],
-  bundle: true,
-  outdir: "./public/bin",
-  loader: {
-    ".ts": "tsx",
-    ".js": "jsx",
-    ".svg": "dataurl",
-    ".html": "text",
-    ".png": "dataurl",
+esbuildServer(
+  {
+    logLevel: "info",
+    allowOverwrite: true,
+    entryPoints: ["./src/index.tsx"],
+    bundle: true,
+    outdir: "./public/bin",
+    loader: {
+      ".ts": "tsx",
+      ".js": "jsx",
+      ".svg": "dataurl",
+      ".html": "text",
+      ".png": "dataurl",
+    },
+    sourcemap: true,
+    minify: true,
   },
-  sourcemap: true,
-  minify: true,
-});
-
-await ctx.serve({
-  servedir: "public",
-});
-
-await ctx.watch();
-
-console.log(`Watching for changes`);
+  {
+    port: 4000,
+    root: "./public",
+  }
+);
